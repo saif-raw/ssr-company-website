@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import CsComponent from "../components/CS";
-import { contentstack } from './apiCall';
+// import { contentstack } from './apiCall';
 
 // console.log(contentstack)
 // let url = JSON.stringify(contentstack);
@@ -14,7 +14,7 @@ class Contentstack extends Component {
 }
 
 export const getStaticProps = async () => {
-	let { data } = await axios.get(contentstack);
+	let { data } = await axios.get("https://raw.githubusercontent.com/saif-raw/ssr-company-data/main/contentstack.json");
 
 	return {
 		props: {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import SurfboardComponent from "../components/SB";
-import { surfboard } from './apiCall';
+// import { surfboard } from './apiCall';
 
 // console.log(surfboard);
 
@@ -12,7 +12,7 @@ class Surfboard extends Component {
 }
 
 export const getStaticProps = async () => {
-	let { data } = await axios.get(surfboard);
+	let { data } = await axios.get("https://saif-raw.github.io/ssr-company-data/surfboard.json");
 
 	return {
 		props: {

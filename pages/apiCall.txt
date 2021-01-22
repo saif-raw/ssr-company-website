@@ -1,0 +1,7 @@
+export default surfboard = "https://saif-raw.github.io/ssr-company-data/surfboard.json";
+
+export default raw = "https://saif-raw.github.io/ssr-company-data/raw.json";
+
+export default contentstack = "https://raw.githubusercontent.com/saif-raw/ssr-company-data/main/contentstack.json";
+
+// module.exports = { surfboard,contentstack,raw };
